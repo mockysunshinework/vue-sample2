@@ -1,28 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- BootstrapVueの表示 -->
+    <!-- スラッシュを入れることで、タグの省略表記になります。<BootstrapVue></BootstrapVue>と同じです。 -->
+    <BootstrapVue/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  // 「BootstrapVue.vue」のインポート
+  import BootstrapVue from './views/BootstrapVue.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    components: {
+      // コンポーネントの読み込み
+      BootstrapVue
+    }
   }
-}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
